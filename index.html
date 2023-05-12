@@ -27,38 +27,38 @@
           <div class="form-row">
             <div class="name">
               <label for="first">First Name</label>
-              <input type="text" name="first-name" id="first" minlength="1" placeholder="  " required>
+              <input type="text" name="first-name" id="first" minlength="1" pattern="[a-zA-Z-]+" placeholder=" " required>
               <p>Example: Jane</p>
               <p class="error-message">Please enter your name in alphabet.</p>
             </div>
             <div class="name">
               <label for="last">Last Name</label>
-              <input type="text" name="last-name" id="last" placeholder="  " required>
+              <input type="text" name="last-name" id="last" minlength="1" pattern="[a-zA-Z-]+" placeholder=" " required>
               <p>Example: Smith</p>
               <p class="error-message">Please enter your name in alphabet.</p>
             </div>
           </div>
           <div class="form-row">
             <label for="email">E-Mail</label>
-            <input type="email" name="email" id="email" placeholder="  " required>
+            <input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" placeholder=" " required>
             <p>Example: jane@xyz.com</p>
             <p class="error-message">Please enter a valid email address.</p>
           </div>
           <div class="form-row">
             <label for="phone">Phone Number (optional)</label>
-            <input type="tel" name="phone" id="phone" placeholder="  ">
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder=" ">
             <p>Example: 123-456-7890</p>
             <p class="error-message">Please enter numbers with hyphens like the example.</p>
           </div>
           <div class="form-row">
             <label for="pw">Password</label>
-            <input type="password" minlength="8" name="pw" id="pw" placeholder="  " required>
-            <p>Enter more than 8 characters of alphabet, number, or symbols.</p>
+            <input type="password" minlength="8" name="pw" id="pw" placeholder=" " required>
+            <p>Enter more than 8 characters.</p>
           </div>
           <div class="form-row">
             <label for="confirm-pw">Confirm Password</label>
-            <input type="password" minlength="8" name="confirm-pw" id="confirm-pw" placeholder="  " required>
-            <p>Enter more than 8 characters of alphabet, number, or symbols.</p>
+            <input type="password" minlength="8" name="confirm-pw" id="confirm-pw" placeholder=" " required>
+            <p>Re-enter the password.</p>
             <p class="error-message">The password does not match.</p>
           </div>
           <button class="submit">Sign Up</button>
