@@ -126,9 +126,10 @@ img {
 .credit {
   font-size: 0.75rem;
   position: absolute;
-  width: 100%; 
+  width: 100%;
+  left: 8px; 
   bottom: 9px;
-  text-align: center;
+  text-align: left;
   margin-top: auto;
 }
 
@@ -166,8 +167,9 @@ img {
  font-weight: 700;
 }
 
-.header a {
+.login {
   text-decoration: none;
+  color: var(--main-text-color, saddlebrown);
 }
 
 
