@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sigh-up Form Project</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <!-- Image side -->
+    <div class="left-container">
+      <div class="banner">
+        <img class="logo" src="./asset/images/odin-lined.png" alt="lined logo of the odin project">
+        <p class="wordmark">Odin</p>
+      </div>
+      <p class="credit">Image by <a href="https://unsplash.com/photos/Baup-Ncteq8">Nwar Igbariah</a> on <a href="https://unsplash.com/">Unsplash</a></p>
+    </div>
+    <!-- Form side -->
+    <div class="right-container">
+      <div class="form-container">
+        <div class="header optimized-header">
+          <!-- <span></span> -->
+          <p class="optimized-wordmark">Odin</p>
+          <h1>Create a New Account</h1>
+          <p>Already have an account? <a href="#"><em>Log in</em></a></p>
+        </div>
+        <form action="" method="get">
+          <div class="form-row">
+            <div class="name">
+              <label for="first">First Name</label>
+              <input type="text" name="first-name" id="first" minlength="1" placeholder="  " required>
+              <p>Example: Jane</p>
+              <p class="error-message">Please enter your name in alphabet.</p>
+            </div>
+            <div class="name">
+              <label for="last">Last Name</label>
+              <input type="text" name="last-name" id="last" placeholder="  " required>
+              <p>Example: Smith</p>
+              <p class="error-message">Please enter your name in alphabet.</p>
+            </div>
+          </div>
+          <div class="form-row">
+            <label for="email">E-Mail</label>
+            <input type="email" name="email" id="email" placeholder="  " required>
+            <p>Example: jane@xyz.com</p>
+            <p class="error-message">Please enter a valid email address.</p>
+          </div>
+          <div class="form-row">
+            <label for="phone">Phone Number (optional)</label>
+            <input type="tel" name="phone" id="phone" placeholder="  ">
+            <p>Example: 123-456-7890</p>
+            <p class="error-message">Please enter numbers with hyphens like the example.</p>
+          </div>
+          <div class="form-row">
+            <label for="pw">Password</label>
+            <input type="password" minlength="8" name="pw" id="pw" placeholder="  " required>
+            <p>Enter more than 8 characters of alphabet, number, or symbols.</p>
+          </div>
+          <div class="form-row">
+            <label for="confirm-pw">Confirm Password</label>
+            <input type="password" minlength="8" name="confirm-pw" id="confirm-pw" placeholder="  " required>
+            <p>Enter more than 8 characters of alphabet, number, or symbols.</p>
+            <p class="error-message">The password does not match.</p>
+          </div>
+          <button class="submit">Sign Up</button>
+        </form>
+      </div>
+    </div>
+    
+  </body>
+</html> 

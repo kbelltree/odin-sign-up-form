@@ -1,0 +1,285 @@
+/* yellowtail-regular - latin */
+@font-face {
+  font-display: block; 
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: 400;
+  src: url('.asset/fonts/yellowtail-v18-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('.asset/fonts/yellowtail-v18-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-regular - latin */
+@font-face {
+  font-display: optional; 
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  src: url('.asset/fonts/lato-v23-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('.asset/fonts/lato-v23-latin-regular.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lato-700 - latin */
+@font-face {
+  font-display: optional;
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 700;
+  src: url('.asset/fonts/lato-v23-latin-700.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+ */
+       url('.asset/fonts/lato-v23-latin-700.woff') format('woff'); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+:root {
+  --main-bg-color: #D9C6B8;
+  --main-text-color: #391812;
+  --banner-color: #0C0A0B;
+  --alert-red: #fa474a;
+  --valid-green: #00C9AD;
+}
+
+@media (max-width: 40rem) {
+  .left-container {
+    display: none; 
+  }
+
+  .right-container .optimized-header {
+    padding-top: 2rem;
+    margin: auto;
+  }
+  
+  .right-container .optimized-wordmark {
+    display: block; 
+    color: var(--main-text-color, saddlebrown);
+    opacity: 0.65;
+    font-family: 'Yellowtail';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 1.2;
+  }
+
+}
+
+body {
+   min-height: 100vh;
+   background-color: var(--main-bg-color, AntiqueWhite);
+   display: flex;
+   overflow: auto;
+   font-family: 'Lato', 'Segoe UI', 'Trebuchet MS', Helvetica, sans-serif;
+   font-weight:400;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.left-container {
+    position: relative;
+    background-position: center;
+    background-image: url("./asset/images/nwar-igbariah-Baup-Ncteq8-unsplash-saved-for-web.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 40%;
+}
+
+.right-container {
+  display: flex; 
+  flex-direction: column;
+  margin: auto;
+}
+
+.banner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  background: rgb(12, 10, 11, 0.3);
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+}
+
+.logo {
+  max-width: 5.375rem;
+  padding-top: 10px;
+}
+
+.wordmark {
+  color: #ffffff;
+  font-family: 'Yellowtail';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 1; 
+  padding-bottom: 6px;
+  margin-left: -0.625rem;  
+}
+
+.credit {
+  font-size: 0.75rem;
+  position: absolute;
+  width: 100%; 
+  bottom: 9px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.credit, 
+.credit a {
+  color: rgb(0, 0, 0, 0.5);
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 10px;
+  color: var(--main-text-color, saddlebrown);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+ text-align: center;
+ padding-top: 2rem;  
+}
+
+.optimized-wordmark {
+  display: none;
+}
+
+.header h1 {
+  opacity: 80%;
+  font-size: 2rem;
+  padding-bottom: 0.5rem;
+}
+
+.header h1, 
+.header em {
+ font-weight: 700;
+}
+
+.header a {
+  text-decoration: none;
+}
+
+
+form {
+  padding: 2.25rem 2.25rem; 
+}
+
+input {
+  height: 2.25rem;
+  padding-left: 0.5rem; 
+  border-radius: 6px;
+  border: 1.5px solid var(--main-bg-color, tan);
+  margin: 0.25rem 0;
+}
+
+.error-message {
+  display: none;
+  margin: 0.25rem 0;
+}
+
+input[type="text"] {
+  width: 11.5rem; 
+}
+
+input[type="email"],
+input[type="tel"], 
+input[type="password"] {
+  width: 25rem;
+}
+
+.form-row {
+  display: flex; 
+  flex-direction: column;  
+}
+
+.form-row:first-child {
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.name {
+  display: flex; 
+  flex-direction: column; 
+}
+
+label, 
+form p {
+  font-size: 0.875rem;
+}
+
+
+label:not([for="first"]):not([for="last"]) {
+  margin-top: 1.25rem;
+}
+
+button.submit {
+  display: block;
+  margin-top: 2.5rem;
+  margin-inline: auto; 
+  border: none; 
+  background-color: var(--main-text-color, saddlebrown);
+  border-radius: 10px; 
+  color: white;
+  height: 3rem; 
+  font-size: 1.5rem; 
+  padding: 0 1rem;
+  cursor: pointer;
+}
+
+button.submit:hover, 
+button.submit:focus-visible {
+  background-color: rgb(57, 24, 18, 0.65);
+}
+
+button.submit:focus-visible {
+  outline: none; 
+}
+
+button.submit:active {
+  transform: scale(98%);
+  box-shadow: 0px 0px 20px -5px black;
+}
+
+input:not(:focus):not(:placeholder-shown):invalid {
+  outline: 1.2px solid var(--alert-red, red);
+  box-shadow: 0px 0px 20px -7px var(--alert-red, red);
+  background: url(./asset/images/alert-circle-outline.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
+  background-color: white; 
+}
+
+input:not(:focus):not(:placeholder-shown):invalid ~ .error-message {
+  display: block; 
+  color: var(--alert-red, red);
+}
+
+input:not(:focus):not(:placeholder-shown):valid {
+  outline: 1.2px solid var(--valid-green, mediumaquamarine);
+  box-shadow: 0px 0px 20px -7px var(--valid-green, mediumaquamarine);
+  background: url(./asset/images/checkmark-circle-outline.svg);
+  background-size: 20px;
+  background-repeat: no-repeat;
+  background-position: 97% 50%;
+  background-color: white; 
+} 
+
+input:optional {
+  border: 1.5px solid var(--main-bg-color, tan);
+}
+
+input:focus-visible {
+  outline: 2px solid var(--main-bg-color, tan);
+}
