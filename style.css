@@ -220,6 +220,11 @@ form p {
   font-size: 0.875rem;
 }
 
+form p {
+  color: grey;
+  color: rgb(57, 24, 18, 0.65);
+}
+
 
 label:not([for="first"]):not([for="last"]) {
   margin-top: 1.25rem;
@@ -241,6 +246,7 @@ button.submit {
 
 button.submit:hover, 
 button.submit:focus-visible {
+  background-color: tan;
   background-color: rgb(57, 24, 18, 0.65);
 }
 
