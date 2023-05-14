@@ -118,12 +118,12 @@ I utilized a variety of new skills while working on this project in addition to 
 
 **List of Referenced Tutorials**
 
-### HTML ### 
+HTML 
 - ['HTML Forms Tutorial' by Internetting Is Hard](https://internetingishard.netlify.app/html-and-css/forms/index.html)
 
 - ['Alternatives to Placeholder Text' by Andrew Coyle](https://coyleandrew.medium.com/alternatives-to-placeholder-text-13f430abc56f#:~:text=Placeholder%20text%20can%20be%20used,so%20causes%20many%20usability%20issues.)
 
-### CSS ###
+CSS
 
 - ['Form Validation UX in HTML and CSS' by Chris Coyier](https://css-tricks.com/form-validation-ux-html-css/)
 
